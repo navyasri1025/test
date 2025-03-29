@@ -1,0 +1,15 @@
+#sum of first, last, third and last third numbers in a 10 digit number:
+n=int(input())
+sum=0
+count=0
+while n>0:
+  rem=n%10
+  n=n//10
+  count+=1
+  if count==1 or count==3 or count==10 or count==8:
+    sum=sum+rem
+print(sum)
+if sum%3==0:
+  print("code found")
+else:
+  print("not found")
